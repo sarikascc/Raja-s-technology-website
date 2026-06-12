@@ -73,24 +73,24 @@ export const CursorFollower = () => {
   if (!mounted) return null;
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-[9999]">
-      <div
-        ref={dotRef}
-        className="absolute left-0 top-0 rounded-full bg-red-600 dark:bg-red-600 shadow-lg"
-        style={{
-          width: "10px",
-          height: "10px",
-        }}
-      />
+   <div className="pointer-events-none fixed inset-0 z-[9999] hidden md:block">
+  <div
+    ref={dotRef}
+    className="absolute left-0 top-0 rounded-full bg-red-600 shadow-lg"
+    style={{
+      width: "10px",
+      height: "10px",
+    }}
+  />
 
-      <div
-        className="absolute rounded-full border border-red-600/50 dark:border-red-500/50 shadow-[0_0_15px_rgba(220,38,38,0.4)] dark:shadow-[0_0_15px_rgba(239,68,68,0.3)] transition-[width,height] duration-300"
-        ref={borderRef}
-        style={{
-          width: isHovering ? "50px" : "38px",
-          height: isHovering ? "50px" : "38px",
-        }}
-      />
-    </div>
+  <div
+    ref={borderRef}
+    className="absolute rounded-full border border-red-600/50 shadow-[0_0_15px_rgba(220,38,38,0.4)] transition-[width,height] duration-300"
+    style={{
+      width: isHovering ? "50px" : "38px",
+      height: isHovering ? "50px" : "38px",
+    }}
+  />
+</div>
   );
 };
