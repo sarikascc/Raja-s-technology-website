@@ -183,7 +183,7 @@ export default function Footer() {
                   href="tel:+919876543210"
                   className="hover:text-red-400 transition-colors"
                 >
-                  +91 98765 43210
+                  +91 84600 42077  / 72111 00935
                 </a>
               </motion.li>
 
