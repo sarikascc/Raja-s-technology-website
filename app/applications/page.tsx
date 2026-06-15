@@ -93,47 +93,49 @@ export default function ApplicationsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-[8%]  py-[5%] bg-[#020617] overflow-hidden ">
-       {/* Immersive Background */}
+      <section className="relative pt-32 pb-20 bg-[#020617] overflow-hidden">
+        {/* Immersive Background */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
           {/* Animated Glows */}
           <div className="absolute top-[20%] left-[10%] w-[30%] h-[30%] bg-blue-600/10 rounded-full blur-[100px] animate-pulse"></div>
           <div className="absolute bottom-[20%] right-[10%] w-[30%] h-[30%] bg-red-600/10 rounded-full blur-[100px] animate-pulse animation-delay-800"></div>
-           <AnimatedBackground interactive={true} density={80} />
+          <AnimatedBackground interactive={true} density={80} />
         </div>
 
         {/* Decorative Icons for Light Space - Subtle & Light */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           {/* Gear in top-left */}
-          <div className="absolute top-[15%] left-[10%] text-rose-600/20 animate-spin-slow" >
-            <Settings size={100} />
+          <div className="absolute top-[10%] left-[5%] md:top-[15%] md:left-[10%] text-rose-600/10 animate-spin-slow" >
+            <Settings className="w-16 h-16 md:w-24 md:h-24" />
           </div>
           {/* Zap in bottom-center */}
           <div
-            className="absolute bottom-[10%] right-[6%] text-rose-600/20 animate-floatFast z-[0]">
-            <Zap size={100} />
+            className="absolute bottom-[10%] right-[5%] md:right-[6%] text-rose-600/10 animate-floatFast z-[0]">
+            <Zap className="w-16 h-16 md:w-24 md:h-24" />
           </div>
 
         </div>
-        
+
 
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#e11d48_0%,transparent_50%)] opacity-20"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pt-8 lg:px-8 relative z-10 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight mb-6"
+            className="text-4xl md:text-5xl lg:text-7xl font-black text-white uppercase tracking-tight mb-6 md:mb-8 leading-[1.1]"
           >
-            Applications of <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-orange-400">
-            Printed Labels</span>
+            Applications of <br className="hidden sm:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-orange-400">
+              Printed Labels
+            </span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto leading-relaxed"
+            className="text-sm md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed px-4"
           >
             Printed labels are used in multiple industries for branding, identification, packaging, tracking, and product information.
           </motion.p>
@@ -144,7 +146,7 @@ export default function ApplicationsPage() {
 
       {/* Grid Section */}
       <section className="relative py-20 bg-white overflow-hidden">
-       
+
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div
             className="absolute top-[10%] left-[4%] text-red-600/10 animate-floatFast"
@@ -193,16 +195,16 @@ export default function ApplicationsPage() {
       </section>
 
       {/* Secondary CTA */}
-        <section className="py-20 bg-gray-50 px-4 relative overflow-hidden">
-      
+      <section className="py-20 bg-gray-50 px-4 relative overflow-hidden">
+
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
 
           <div
             className="absolute top-[-5%] left-[10%] text-rose-600/10 animate-floatFast ">
             <Zap size={100} />
           </div>
-         
-      
+
+
           <div
             className="absolute top-[10%] left-[45%] w-40 h-10 bg-yellow-100/50 rounded-full  animate-floatFast  z-[1]"
           />
@@ -215,7 +217,7 @@ export default function ApplicationsPage() {
             transition={{ duration: 0.6 }}
             className="bg-white rounded-[3rem] p-12 md:p-20 text-center shadow-2xl relative overflow-hidden group border border-gray-100"
           >
-           
+
             <h2 className="text-3xl md:text-3xl font-black text-gray-900 mb-6 relative z-10 uppercase tracking-wider">Need a Specialized Solution?</h2>
             <p className="text-gray-600 mb-10 text-sm max-w-xl mx-auto relative z-10 font-medium leading-relaxed">We provide custom labeling for any unique industry requirement. Let&apos;s build your brand together.</p>
             <Link href="/contact" className="inline-flex items-center px-6 py-3 bg-red-600 text-white font-black uppercase tracking-wide text-sm rounded-xl hover:bg-red-700 transition-all shadow-xl hover:scale-105 active:scale-95 relative z-10">

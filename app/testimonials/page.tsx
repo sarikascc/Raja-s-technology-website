@@ -142,14 +142,14 @@ export default function TestimonialPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-[8%] py-[4%] bg-[#020617] overflow-hidden">
-       {/* Immersive Background */}
+      <section className="relative pt-32 pb-20 bg-[#020617] overflow-hidden">
+        {/* Immersive Background */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
           {/* Animated Glows */}
           <div className="absolute top-[20%] left-[10%] w-[30%] h-[30%] bg-blue-600/10 rounded-full blur-[100px] animate-pulse"></div>
           <div className="absolute bottom-[20%] right-[10%] w-[30%] h-[30%] bg-red-600/10 rounded-full blur-[100px] animate-pulse animation-delay-800"></div>
-           <AnimatedBackground interactive={true} density={80} />
+          <AnimatedBackground interactive={true} density={80} />
         </div>
 
 
@@ -166,8 +166,8 @@ export default function TestimonialPage() {
 
         </div>
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#e11d48_0%,transparent_50%)] opacity-20"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#e11d48_0%,transparent_50%)] opacity-20"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pt-8 lg:px-8 relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -197,8 +197,8 @@ export default function TestimonialPage() {
 
       {/* Featured Testimonials (Glass Stack) */}
       <section className="py-20 bg-gradient-to-br from-white via-rose-30 to-orange-20 overflow-hidden relative">
-       {/* Immersive Background */}
-    
+        {/* Immersive Background */}
+
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute -top-28 -left-20 w-80 h-80 bg-red-300/35 rounded-full blur-[110px]" />
           <div className="absolute top-1/3 -right-24 w-96 h-96 bg-orange-300/30 rounded-full blur-[110px]" />
@@ -253,7 +253,7 @@ export default function TestimonialPage() {
 
       {/* Statistics Section */}
       <section className="py-20 bg-[#111827] text-white relative overflow-hidden">
-       <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0">
 
           {/* Dynamic Interactive Canvas Particles & Glow Orbs */}
           <AnimatedBackground interactive={true} density={80} />
@@ -303,10 +303,10 @@ export default function TestimonialPage() {
 
       {/* Call To Action Section */}
       <section className="py-20 bg-gray-50 px-4 relative overflow-hidden">
-     
+
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
 
-        
+
           <div className="absolute top-[10%] right-[5%] text-rose-600/10 animate-floatSlow" >
             <CheckCircle2 size={80} />
           </div>
@@ -314,7 +314,7 @@ export default function TestimonialPage() {
             className="absolute bottom-[15%] left-[3%] w-20 h-10 bg-green-300/20 rounded-[10px] -rotate-[10deg] animate-floatFast  "
           />
 
-      
+
           <div
             className="absolute top-[10%] left-[45%] w-40 h-10 bg-yellow-100/50 rounded-full  animate-floatFast  z-[1]"
           />
@@ -326,7 +326,7 @@ export default function TestimonialPage() {
           transition={{ duration: 0.8 }}
           className="max-w-5xl mx-auto bg-white rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden group shadow-2xl border border-gray-100"
         >
-         
+
 
           <h2 className="text-3xl md:text-3xl font-black text-gray-900 mb-6 relative z-10 uppercase tracking-wider">
             Need Premium Printed Labels <br className="hidden md:block" /> for Your Business?

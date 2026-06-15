@@ -32,7 +32,7 @@ export default function BlogPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-[8%] pb-20 bg-[#020617] overflow-hidden relative ">
+      <section className="relative pt-32 pb-20 bg-[#020617] overflow-hidden">
         {/* Immersive Background */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
