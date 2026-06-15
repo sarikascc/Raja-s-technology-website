@@ -54,27 +54,27 @@ const staggerContainer = {
 
 const manufacturingVideos = [
   {
-    videoUrl: "https://www.shutterstock.com/shutterstock/videos/4036473961/preview/stock-footage-warehouse-worker-scanning-barcode-labels-on-parcels-for-inventory-update.mp4",
+    videoUrl: "https://www.pexels.com/download/video/29832463/",
     thumbnail: "/banner1.png"
   },
   {
-    videoUrl: "https://www.shutterstock.com/shutterstock/videos/4070126901/preview/stock-footage-person-hands-and-box-with-thank-you-label-for-small-business-logistics-or-delivery-closeup.mp4",
+    videoUrl: "https://www.pexels.com/download/video/7835166/",
     thumbnail: "/banner2.png"
   },
   {
-    videoUrl: "https://www.shutterstock.com/shutterstock/videos/3832780627/preview/stock-footage-seoul-korea-may-automated-labeling-machine-applies-printed-qr-code-stickers-onto-cards-on.mp4",
+    videoUrl: "https://www.pexels.com/download/video/34741560/",
     thumbnail: "/banner1.png"
   },
   {
-    videoUrl: "https://www.shutterstock.com/shutterstock/videos/1027216289/preview/stock-footage-the-factory-production-paper-moscow-factory.mp4",
+    videoUrl: "https://www.pexels.com/download/video/4121754/",
     thumbnail: "/banner2.png"
   },
   {
-    videoUrl: "https://www.shutterstock.com/shutterstock/videos/1090932471/preview/stock-footage-close-up-shot-of-newspaper-production-on-a-conveyor-belt-offset-printing-on-a-complex-technical.mp4",
+    videoUrl: "https://www.pexels.com/download/video/7855145/",
     thumbnail: "/banner1.png"
   },
   {
-    videoUrl: "https://www.shutterstock.com/shutterstock/videos/3835386161/preview/stock-footage-vertical-video-asian-employee-applying-shipping-labels-and-scanning-tracking-info-registering-the.mp4",
+    videoUrl: "https://www.pexels.com/download/video/7835667/",
     thumbnail: "/banner2.png"
   },
 ];
